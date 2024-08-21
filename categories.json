@@ -1,0 +1,245 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "事件注册和处理",
+      "functions": [
+        {
+          "id": 1,
+          "name": "registerCheckEvent",
+          "description": "注册拦截事件，指定动作执行前触发，并可阻断/放行后续操作。"
+        },
+        {
+          "id": 2,
+          "name": "registerAction",
+          "description": "注册钩子事件，指定动作完成后触发。支持多次调用注册，按注册的先后顺序依次执行。"
+        },
+        {
+          "id": 28,
+          "name": "bindFieldChangeEvent",
+          "description": "表单字段值变化触发事件。"
+        },
+        {
+          "id": 29,
+          "name": "bindDetailFieldChangeEvent",
+          "description": "明细字段值变化触发事件。"
+        },
+        {
+          "id": 30,
+          "name": "bindFieldAction",
+          "description": "字段区域绑定动作事件。"
+        },
+        {
+          "id": 32,
+          "name": "doRightBtnEvent",
+          "description": "调用表单右键事件逻辑"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "字段操作和联动",
+      "functions": [
+        {
+          "id": 3,
+          "name": "convertFieldNameToId",
+          "description": "将字段名称转换成字段id。灵活运用此方法，可实现多表单、多环境，代码块通用；解耦代码块中指定fieldid。"
+        },
+        {
+          "id": 4,
+          "name": "getFieldValue",
+          "description": "获取单个字段值。"
+        },
+        {
+          "id": 5,
+          "name": "changeFieldValue",
+          "description": "修改单个字段值（不支持附件类型）。此方法修改的字段如果涉及到触发联动、单元格格式化等，修改完值会自动触发联动/格式化。"
+        },
+        {
+          "id": 6,
+          "name": "changeFieldAttr",
+          "description": "改变单个字段显示属性（只读/必填等）。"
+        },
+        {
+          "id": 7,
+          "name": "changeSingleField",
+          "description": "同时修改字段的值及显示属性。"
+        },
+        {
+          "id": 8,
+          "name": "changeMoreField",
+          "description": "批量修改字段值或显示属性。"
+        },
+        {
+          "id": 9,
+          "name": "triggerFieldAllLinkage",
+          "description": "触发指定字段涉及的所有联动。"
+        },
+        {
+          "id": 10,
+          "name": "getFieldInfo",
+          "description": "根据字段ID获取字段信息。"
+        },
+        {
+          "id": 11,
+          "name": "getFieldCurViewAttr",
+          "description": "获取字段当前的只读/必填属性。"
+        },
+        {
+          "id": 31,
+          "name": "getFirstRequiredEmptyField",
+          "description": "获取校验必填逻辑第一个未必填的字段"
+        },
+        {
+          "id": 37,
+          "name": "getSignRemark",
+          "description": "获取签字意见内容"
+        },
+        {
+          "id": 38,
+          "name": "setSignRemark",
+          "description": "设置签字意见内容"
+        },
+        {
+          "id": 39,
+          "name": "appendSignEditorBottomBar",
+          "description": "扩展签字意见输入框底部按钮"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "明细表操作",
+      "functions": [
+        {
+          "id": 18,
+          "name": "addDetailRow",
+          "description": "添加明细行并设置初始值。"
+        },
+        {
+          "id": 19,
+          "name": "delDetailRow",
+          "description": "删除明细表指定行/全部行。"
+        },
+        {
+          "id": 20,
+          "name": "checkDetailRow",
+          "description": "选中明细表指定行/全部行。"
+        },
+        {
+          "id": 21,
+          "name": "getDetailAllRowIndexStr",
+          "description": "获取明细表所有行标识。"
+        },
+        {
+          "id": 22,
+          "name": "getDetailCheckedRowIndexStr",
+          "description": "获取明细表选中行的行标识。"
+        },
+        {
+          "id": 23,
+          "name": "controlDetailRowDisableCheck",
+          "description": "控制明细行的勾选框是否禁用。"
+        },
+        {
+          "id": 24,
+          "name": "controlDetailRowDisplay",
+          "description": "控制明细数据行的显示和隐藏。"
+        },
+        {
+          "id": 25,
+          "name": "getDetailRowKey",
+          "description": "获取明细已有行的数据库主键。"
+        },
+        {
+          "id": 26,
+          "name": "getDetailRowCount",
+          "description": "获取明细表的总行数。"
+        },
+        {
+          "id": 27,
+          "name": "setDetailAddUseCopy",
+          "description": "设置明细添加时是否复制最后一行记录。"
+        },
+        {
+          "id": 33,
+          "name": "getDetailRowSerailNum",
+          "description": "根据明细行标识获取序号(第几行)。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "界面操作",
+      "functions": [
+        {
+          "id": 34,
+          "name": "getBaseInfo",
+          "description": "获取当前打开请求的基础信息，包括路径id、节点id、表单id、主次账号信息。"
+        },
+        {
+          "id": 35,
+          "name": "showMessage",
+          "description": "可控制显示时间的message信息。"
+        },
+        {
+          "id": 36,
+          "name": "showConfirm",
+          "description": "系统样式的Confirm确认框。"
+        },
+        {
+          "id": 40,
+          "name": "controlBtnDisabled",
+          "description": "设置表单顶部按钮、右键菜单置灰不可操作和恢复操作功能"
+        },
+        {
+          "id": 41,
+          "name": "doRightBtnEvent",
+          "description": "调用表单右键事件逻辑"
+        },
+        {
+          "id": 42,
+          "name": "reloadPage",
+          "description": "强制刷新表单页面"
+        },
+        {
+          "id": 43,
+          "name": "showHoverWindow",
+          "description": "移动端打开链接方式"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "扩展功能",
+      "functions": [
+        {
+          "id": 44,
+          "name": "appendSubmitParam",
+          "description": "扩展提交操作发送给服务端的参数"
+        },
+        {
+          "id": 45,
+          "name": "appendBrowserDataUrlParam",
+          "description": "扩展浏览按钮取数接口参数值"
+        },
+        {
+          "id": 46,
+          "name": "appendSignEditorBottomBar",
+          "description": "扩展签字意见输入框底部按钮"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "其他操作",
+      "functions": [
+        {
+          "id": 47,
+          "name": "getFirstRequiredEmptyField",
+          "description": "获取校验必填逻辑第一个未必填的字段"
+        }
+      ]
+    }
+  ]
+}

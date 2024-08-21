@@ -1,0 +1,207 @@
+[
+    {
+        "id": 1,
+        "name": "registerCheckEvent",
+        "description": "Registerinterceptioneventandtriggerbeforeexecutingthespecifiedaction,withtheabilitytoblockorallowsubsequentoperations."
+    },
+    {
+        "id": 2,
+        "name": "registerAction",
+        "description": "Registerhookeventtotriggerafterthecompletionofthespecifiedaction.Supportsmultipleregistrations,executedintheordertheywereregistered."
+    },
+    {
+        "id": 28,
+        "name": "bindFieldChangeEvent",
+        "description": "Triggeredwhenthevalueofaformfieldchanges."
+    },
+    {
+        "id": 29,
+        "name": "bindDetailFieldChangeEvent",
+        "description": "Triggeredwhenthevalueofadetailfieldchanges."
+    },
+    {
+        "id": 30,
+        "name": "bindFieldAction",
+        "description": "Bindactioneventtofieldarea."
+    },
+    {
+        "id": 32,
+        "name": "doRightBtnEvent",
+        "description": "Invokeformright-clickeventlogic."
+    },
+    {
+        "id": 3,
+        "name": "convertFieldNameToId",
+        "description": "ConvertsfieldnameittoitsfieldID.Usefulforcodeblocksthatneedtobereusableacrossmultipleformsandenvironments."
+    },
+    {
+        "id": 4,
+        "name": "getFieldValue",
+        "description": "Getthevalueofasinglefield."
+    },
+    {
+        "id": 5,
+        "name": "changeFieldValue",
+        "description": "Modifythevalueofasinglefield(excludingattachmenttypes).Triggersfieldlinkagesandcellformattingifapplicable."
+    },
+    {
+        "id": 6,
+        "name": "changeFieldAttr",
+        "description": "Changethedisplayattributesofasinglefield(read-only/mandatory,etc.)."
+    },
+    {
+        "id": 7,
+        "name": "changeSingleField",
+        "description": "Simultaneouslymodifythevalueanddisplayattributesofafield."
+    },
+    {
+        "id": 8,
+        "name": "changeMoreField",
+        "description": "Bulkmodifyfieldvaluesordisplayattributes."
+    },
+    {
+        "id": 9,
+        "name": "triggerFieldAllLinkage",
+        "description": "Triggeralllinkagesassociatedwithaspecifiedfield."
+    },
+    {
+        "id": 10,
+        "name": "getFieldInfo",
+        "description": "GetfieldinformationbasedonitsfieldID."
+    },
+    {
+        "id": 11,
+        "name": "getFieldCurViewAttr",
+        "description": "Getthecurrentread-only/mandatoryattributesofafield."
+    },
+    {
+        "id": 31,
+        "name": "getFirstRequiredEmptyField",
+        "description": "Getthefirstnon-mandatoryfieldintherequiredvalidationlogic."
+    },
+    {
+        "id": 37,
+        "name": "getSignRemark",
+        "description": "Getthesignaturecommentcontent."
+    },
+    {
+        "id": 38,
+        "name": "setSignRemark",
+        "description": "Setthesignaturecommentcontent."
+    },
+    {
+        "id": 39,
+        "name": "appendSignEditorBottomBar",
+        "description": "Extendthebottombuttonsofthesignaturecommentinputbox."
+    },
+    {
+        "id": 18,
+        "name": "addDetailRow",
+        "description": "Addadetailrowandsetitsinitialvalue."
+    },
+    {
+        "id": 19,
+        "name": "delDetailRow",
+        "description": "Deletethespecifiedorallrowsinthedetailtable."
+    },
+    {
+        "id": 20,
+        "name": "checkDetailRow",
+        "description": "Selectthespecifiedorallrowsinthedetailtable."
+    },
+    {
+        "id": 21,
+        "name": "getDetailAllRowIndexStr",
+        "description": "Gettheidentifiersofallrowsinthedetailtable."
+    },
+    {
+        "id": 22,
+        "name": "getDetailCheckedRowIndexStr",
+        "description": "Gettheidentifiersoftheselectedrowsinthedetailtable."
+    },
+    {
+        "id": 23,
+        "name": "controlDetailRowDisableCheck",
+        "description": "Controlthecheckboxstatus(enabled/disabled)ofdetailrows."
+    },
+    {
+        "id": 24,
+        "name": "controlDetailRowDisplay",
+        "description": "Controlthedisplayandvisibilityofdetaildatarows."
+    },
+    {
+        "id": 25,
+        "name": "getDetailRowKey",
+        "description": "Getthedatabaseprimarykeyofexistingdetailrows."
+    },
+    {
+        "id": 26,
+        "name": "getDetailRowCount",
+        "description": "Getthetotalnumberofrowsinthedetailtable."
+    },
+    {
+        "id": 27,
+        "name": "setDetailAddUseCopy",
+        "description": "Setwhethertocopythelastrowwhenaddingadetailrow."
+    },
+    {
+        "id": 33,
+        "name": "getDetailRowSerailNum",
+        "description": "Gettheserialnumber(rownumber)basedonthedetailrowidentifier."
+    },
+    {
+        "id": 34,
+        "name": "getBaseInfo",
+        "description": "Getbasicinformationofthecurrentrequest,includingpathID,nodeID,formID,andaccountinformation."
+    },
+    {
+        "id": 35,
+        "name": "showMessage",
+        "description": "Displayamessagewithcustomizabledisplayduration."
+    },
+    {
+        "id": 36,
+        "name": "showConfirm",
+        "description": "System-styleconfirmationdialog."
+    },
+    {
+        "id": 40,
+        "name": "controlBtnDisabled",
+        "description": "Settheform'stopbuttonsandright-clickmenutobedisabledorenabled."
+    },
+    {
+        "id": 41,
+        "name": "doRightBtnEvent",
+        "description": "Invokeformright-clickeventlogic."
+    },
+    {
+        "id": 42,
+        "name": "reloadPage",
+        "description": "Forcefullyrefreshtheformpage."
+    },
+    {
+        "id": 43,
+        "name": "showHoverWindow",
+        "description": "Openalinkinahoverwindowonmobiledevices."
+    },
+    {
+        "id": 44,
+        "name": "appendSubmitParam",
+        "description": "Extendtheparameterssenttotheserverduringthesubmitoperation."
+    },
+    {
+        "id": 45,
+        "name": "appendBrowserDataUrlParam",
+        "description": "Extendtheparametervaluesforthedatabrowsingbuttoninterface."
+    },
+    {
+        "id": 46,
+        "name": "appendSignEditorBottomBar",
+        "description": "Extendthebottombuttonsofthesignaturecommentinputbox."
+    },
+    {
+        "id": 47,
+        "name": "getFirstRequiredEmptyField",
+        "description": "Getthefirstnon-mandatoryfieldintherequiredvalidationlogic."
+    }
+]
